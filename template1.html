@@ -7,9 +7,75 @@
     <title>Title</title>
     <style>
         #second{
-            background-image: url('black_Image.png');
-            height:700px;
+            background-image:url("bg-fire.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
+
+        .cards-list {
+            z-index: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          }
+
+          .card {
+            margin: 30px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 40px;
+          box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+            cursor: pointer;
+            transition: 0.4s;
+          }
+
+          .card .card_image {
+            width: inherit;
+            height: inherit;
+            border-radius: 40px;
+          }
+
+          .card .card_image img {
+            width: inherit;
+            height: inherit;
+            border-radius: 40px;
+            object-fit: cover;
+          }
+
+          .card .card_title {
+            text-align: center;
+            border-radius: 0px 0px 40px 40px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: -80px;
+            height: 40px;
+          }
+
+          .card:hover {
+            transform: scale(0.9, 0.9);
+            box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+              -5px -5px 30px 15px rgba(0,0,0,0.22);
+          }
+
+          .title-white {
+            color: white;
+          }
+
+          .title-black {
+            color: black;
+          }
+
+          @media all and (max-width: 500px) {
+            .card-list {
+              /* On small screens, we are no longer using row direction but column */
+              flex-direction: column;
+            }
+          }
+
+      
     </style>
   </head>
   <body>
@@ -58,11 +124,89 @@
 
     <section id='second' > 
         <div style='text-align:center;color:White;'>
-            <h2 >Welcome!!!</h2>
+            <h2> Welcome!!! </h2>
         </div>
-        <div style='text-align:center;color:White;padding-top:200px'>
-            <h1><b><i>Gaurav Patil</i></b></h1>
+        <div style='text-align:center;color:White;padding-top:1000px'>
+            <h1><b><i> Team </i></b></h1>
         </div>
+    </section>
+
+    <section >
+      <div class="cards-list">
+  
+        <div class="card 1">
+          <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+          <div class="card_title title-white">
+            <p>Name 1</p>
+          </div>
+        </div>
+        
+          <div class="card 2">
+          <div class="card_image">
+            <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+            </div>
+          <div class="card_title title-white">
+            <p>Name 2</p>
+          </div>
+        </div>
+        
+        <div class="card 3">
+          <div class="card_image">
+            <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+          </div>
+          <div class="card_title">
+            <p>Name 3</p>
+          </div>
+        </div>
+          
+          <div class="card 4">
+          <div class="card_image">
+            <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+            </div>
+          <div class="card_title title-black">
+            <p>Name 4</p>
+          </div>
+          </div>
+        
+        </div>
+
+        <div class="cards-list">
+  
+          <div class="card 1">
+            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+            <div class="card_title title-white">
+              <p>Name 5</p>
+            </div>
+          </div>
+          
+            <div class="card 2">
+            <div class="card_image">
+              <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+              </div>
+            <div class="card_title title-white">
+              <p>name 6</p>
+            </div>
+          </div>
+          
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+            </div>
+            <div class="card_title">
+              <p>Name 7</p>
+            </div>
+          </div>
+            
+            <div class="card 4">
+            <div class="card_image">
+              <img src="https://i.redd.it/b3esnz5ra34y.jpg" />
+              </div>
+            <div class="card_title title-black">
+              <p>Name 8</p>
+            </div>
+            </div>
+          
+          </div>
     </section>
 
 
