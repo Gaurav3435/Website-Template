@@ -1,2 +1,2 @@
 # Website-Template
-<h1>HTMl,CSS<h1>
+<h1>HTML,CSS<h1>
